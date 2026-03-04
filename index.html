@@ -265,15 +265,27 @@
 
   /* Mobile responsiveness */
   @media (max-width: 740px) {
+    html, body {
+      align-items: flex-start;
+      padding: 16px 0;
+      overflow-y: auto;
+    }
     .crt {
       width: 95vw;
-      height: 56vw;
-      min-height: 280px;
+      height: auto;
+      min-height: unset;
     }
+    .screen {
+      position: relative;
+      inset: unset;
+      padding: 20px 22px;
+    }
+    .logo-wrap { margin: 10px 0 4px 0; }
     .logo-text { font-size: 22vw; }
-    .sys-line { font-size: 9px; }
-    .tagline { font-size: 10px; letter-spacing: 0.2em; }
+    .sys-line { font-size: 8.5px; }
+    .tagline { font-size: 9.5px; letter-spacing: 0.18em; margin-bottom: 12px; }
     .data-row { font-size: 9px; }
+    .data-block { margin-top: 16px; }
   }
 </style>
 </head>
